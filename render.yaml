@@ -1,5 +1,6 @@
 services:
 - type: web
+  plan: free
   name: ghost
   env: docker
   autoDeploy: false
@@ -26,6 +27,7 @@ services:
         envVarKey: MYSQL_PASSWORD
 
 - type: pserv
+  plan: free
   name: mysql
   plan: standard
   env: docker
